@@ -9,8 +9,12 @@ export const FooterBase = styled.footer`
   padding-top: 32px;
   padding-bottom: 32px;
   color: var(--white);
-  text-align: center;
   @media (max-width: 800px) {
     margin-bottom: 50px;
   }
+`;
+
+FooterBase.wrapper = styled.section`
+  display: flex;
+  justify-content: space-evenly;
 `;

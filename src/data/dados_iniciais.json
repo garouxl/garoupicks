@@ -3,7 +3,7 @@
     {
       "titulo": "Filmes da série Alien",
       "link": "https://en.wikipedia.org/wiki/Alien_(franchise)",
-      "cor": "#6BD1FF",
+      "cor": "purple",
       "link_extra": {
         "text": "A xeno-what?",
         "url": "https://pt.wikipedia.org/wiki/Xenomorfo"
@@ -84,20 +84,20 @@
       "cor": "orange",
       "videos": [
         {
-          "titulo": "Interestellar",
-          "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+          "titulo": "Predator",
+          "url": "https://www.youtube.com/watch?v=X2hBYGwKh3I"
         },
         {
-          "titulo": "Gattaca",
-          "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+          "titulo": "Mad Max 2",
+          "url": "https://www.youtube.com/watch?v=UlwtiOyaoo0"
         },
         {
-          "titulo": "A Chegada",
-          "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+          "titulo": "Avatar",
+          "url": "https://www.youtube.com/watch?v=5PSNL1qE6VY"
         },
         {
-          "titulo": "Feitiço do Tempo",
-          "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+          "titulo": "Slither",
+          "url": "https://www.youtube.com/watch?v=2-f8wU6Fpeo"
         }
       ]
     },
@@ -110,16 +110,16 @@
       },
       "videos": [
         {
-          "titulo": "Final Fantasy 7",
-          "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+          "titulo": "Dead Space",
+          "url": "https://www.youtube.com/watch?v=hMlUsGSALyY"
         },
         {
-          "titulo": "Assassins Creed Valhalla",
-          "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+          "titulo": "Escape from Butcher`s Bay",
+          "url": "https://www.youtube.com/watch?v=WktQZap_iiE"
         },
         {
-          "titulo": "God of War 4",
-          "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+          "titulo": "Amnesia: The dark descent",
+          "url": "https://www.youtube.com/watch?v=mAgyxK_r2eM"
         },
         {
           "titulo": "Resident Evil 8",
