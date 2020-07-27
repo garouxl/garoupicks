@@ -52,10 +52,6 @@
           "url": "https://www.youtube.com/watch?v=THxBHDsgTDw"
         },
         {
-          "titulo": "Galaxia do terror",
-          "url": "https://www.youtube.com/watch?v=mTVKNW5s5js"
-        },
-        {
           "titulo": "Life force",
           "url": "https://www.youtube.com/watch?v=MOF0Ov8isvI"
         }
@@ -71,7 +67,7 @@
       "videos": [
         {
           "titulo": "Dawn of the dead",
-          "url": "https://en.wikipedia.org/wiki/List_of_zombie_films"
+          "url": "https://www.youtube.com/watch?v=DV8mJcuYVaA"
         },
         {
           "titulo": "Return of the living dead",
@@ -128,10 +124,6 @@
         {
           "titulo": "Resident Evil 8",
           "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
-        },
-        {
-          "titulo": "Pokémon Let's Go Pikachu/Eevee",
-          "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
         }
       ]
     }
