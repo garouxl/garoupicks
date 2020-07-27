@@ -12,7 +12,7 @@ function App() {
       <BannerMain
         videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
         url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription={'O que é Front-End? Trabalhando na área'}
+        videoDescription={'Aliens, O Resgate arrecadou $ 180 milhões em todo o mundo. Foi indicado para sete prêmios da Academia , incluindo um de Melhor Atriz para Sigourney Weaver, ganhando ambos de Efeitos Sonoros e Efeitos Visuais. Ele ganhou oito Saturn Awards, incluindo Melhor Filme de Ficção Científica, Melhor Atriz para Weaver, e Melhor Direção e Melhor Escrita para Cameron.'}
       />
       <Carousel
         ignoreFirstVideo
@@ -33,10 +33,6 @@ function App() {
       <Carousel
         ignoreFirstVideo
         category={dadosIniciais.categorias[4]}
-      />
-      <Carousel
-        ignoreFirstVideo
-        category={dadosIniciais.categorias[5]}
       />
       <Footer />
     </div>

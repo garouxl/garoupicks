@@ -1,94 +1,90 @@
 {
   "categorias": [
     {
-      "titulo": "Front End",
-      "link": "https://www.alura.com.br/formacao-front-end",
+      "titulo": "Filmes da série Alien",
+      "link": "https://en.wikipedia.org/wiki/Alien_(franchise)",
       "cor": "#6BD1FF",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "A xeno-what?",
+        "url": "https://pt.wikipedia.org/wiki/Xenomorfo"
       },
       "videos": [
         {
-          "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-          "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+          "titulo": "Game over man, game over! #aliens",
+          "url": "https://www.youtube.com/watch?v=bTCaVjQ8nU4"
         },
         {
-          "titulo": "SEO com React",
-          "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+          "titulo": "No espaço ninguém pode ouvir você gritar",
+          "url": "https://www.youtube.com/watch?v=DGAHtWV7Ua8"
         },
         {
-          "titulo": "Componentização com VanillaJS #AluraMais",
-          "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+          "titulo": "Só presta a Assembly edition...",
+          "url": "https://www.youtube.com/watch?v=KUTaNMJJBa8"
         },
         {
-          "titulo": "Pare de chutar e aprenda a display: inline #01",
-          "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+          "titulo": "Are you seeeing this?!",
+          "url": "https://www.youtube.com/watch?v=34cEo0VhfGE"
         },
         {
-          "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-          "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+          "titulo": "Mas oi?!",
+          "url": "https://www.youtube.com/watch?v=-qJjiq72WOo"
         }
       ]
     },
     {
-      "titulo": "Back End",
+      "titulo": "O horror veio do espaço",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "Sempre vem coisa de lá!",
+        "url": "https://screenrant.com/best-horror-outer-space-movies/"
       },
       "videos": [
         {
-          "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-          "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+          "titulo": "The Thing",
+          "url": "https://www.youtube.com/watch?v=5ftmr17M-a4"
         },
         {
-          "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-          "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+          "titulo": "Pandorum",
+          "url": "https://www.youtube.com/watch?v=aLO5OACiXNg"
         },
         {
-          "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-          "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+          "titulo": "Event Horizon",
+          "url": "https://www.youtube.com/watch?v=THxBHDsgTDw"
         },
         {
-          "titulo": "API: Dicionário do Programador",
-          "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+          "titulo": "Galaxia do terror",
+          "url": "https://www.youtube.com/watch?v=mTVKNW5s5js"
         },
         {
-          "titulo": "Usando Git Direito",
-          "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+          "titulo": "Life force",
+          "url": "https://www.youtube.com/watch?v=MOF0Ov8isvI"
         }
       ]
     },
     {
-      "titulo": "Data Science e Inteligência Artificial",
+      "titulo": "Zumbis",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/formacao-data-science"
+        "text": "Filmes sobre zumbis",
+        "url": "https://en.wikipedia.org/wiki/List_of_zombie_films"
       },
       "videos": [
         {
-          "titulo": "Teste de Turing",
-          "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+          "titulo": "Dawn of the dead",
+          "url": "https://en.wikipedia.org/wiki/List_of_zombie_films"
         },
         {
-          "titulo": "O que é Data Science?",
-          "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+          "titulo": "Return of the living dead",
+          "url": "https://www.youtube.com/watch?v=KeSAFGWzft8"
         },
         {
-          "titulo": "Melhor forma de aprender Python",
-          "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
-        },
-        {
-          "titulo": "Como ingressar no mercado de Data Science?",
-          "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+          "titulo": "Day of the dead",
+          "url": "https://www.youtube.com/watch?v=COj7ro8AjT8"
         }
       ]
     },
     {
-      "titulo": "Filmes",
+      "titulo": "Outros  filmes de ficção",
       "cor": "orange",
       "videos": [
         {
@@ -113,8 +109,8 @@
       "titulo": "Games",
       "cor": "red",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/formacao-jogos-unity"
+        "text": "Alguns jogos com a temática",
+        "url": "https://pt.wikipedia.org/wiki/Jogo_eletr%C3%B4nico"
       },
       "videos": [
         {
@@ -136,36 +132,6 @@
         {
           "titulo": "Pokémon Let's Go Pikachu/Eevee",
           "url": "https://www.youtube.com/watch?v=L56q_k2ydrs"
-        }
-      ]
-    },
-    {
-      "titulo": "Aprendendo a aprender tecnologia",
-      "cor": "#6b5be2",
-      "link_extra": {
-        "text": "Curso sobre aprendizado na Alura",
-        "url": "https://alura.com.br/curso-online-aprender-a-aprender-tecnicas-para-seu-autodesenvolvimento"
-      },
-      "videos": [
-        {
-          "titulo": "Como estudar melhor?",
-          "url": "https://www.youtube.com/watch?v=Is6c9KSGCbk&feature=youtu.be"
-        },
-        {
-          "titulo": "Faculdade",
-          "url": "https://www.youtube.com/watch?v=jw06H8esyzQ&feature=youtu.be"
-        },
-        {
-          "titulo": "Frameworks",
-          "url": "https://www.youtube.com/watch?v=QzDjdlF1BQI"
-        },
-        {
-          "titulo": "A mágica do Aprendizado",
-          "url": "https://www.youtube.com/watch?v=oTEXzpfEpPY"
-        },
-        {
-          "titulo": "Como aprender a programar?",
-          "url": "https://www.youtube.com/watch?v=MwCx2qKdbDw&feature=youtu.be"
         }
       ]
     }
