@@ -1,12 +1,3 @@
-.Logo {
-  max-width: 168px;
-}
-@media (max-width: 800px) {
-  .Logo {
-    max-width: 105px;
-  }
-}
-
 .Menu {
   width: 100%;
   height: 94px;

@@ -17,4 +17,5 @@ export const FooterBase = styled.footer`
 FooterBase.wrapper = styled.section`
   display: flex;
   justify-content: space-evenly;
+  align-items: center;
 `;
