@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom'
 
-export const Link = styled.a`
+export const WrapperImage = styled(Link)`
   border-bottom: 1px solid var(--primary);
 `;
 

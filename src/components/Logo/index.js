@@ -1,19 +1,19 @@
 import React from 'react';
 import LogoPng from '../../assets/img/Logo.png'
 
-import { Link, Image } from './styles.js'
+import { WrapperImage, Image } from './styles.js'
 
 
-function Logo () {
+function Logo ({ title }) {
   return (
-    <Link href="/">
+    <WrapperImage to="/">
       <Image
         className="Logo"
         src={LogoPng}
-        alt="Garoupicks Logo"
-        title="Garoupicks logo"
+        alt={title}
+        title={title}
       />
-    </Link>
+    </WrapperImage>
   )
 }
 
