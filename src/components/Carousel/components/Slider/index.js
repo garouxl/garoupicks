@@ -37,13 +37,16 @@ const Container = styled.ul`
 
   .slick-prev {
     left: -35px;
+    @media (max-width: 800px) {
+      visibility: hidden;
+    }
 
   }
 
   .slick-next {
     right: -35px;
     @media (max-width: 800px) {
-      right: -20px;
+      visibility: hidden;
     }
   }
 
