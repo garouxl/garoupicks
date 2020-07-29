@@ -7,17 +7,19 @@ const Container = styled.ul`
   padding: 0;
   margin: 0;
   transition: .5s cubic-bezier(0.65, 0.12, 0.1, 0.97);
-  &:hover li:not(:hover) {
+  @media (min-width: 800px) {
+    &:hover li:not(:hover) {
     transform: scale(.90) translateY(10px);
     opacity: .5;
   }
-  li {
-    transition: .5s cubic-bezier(0.65, 0.12, 0.1, 0.97);
-  }
+    li {
+      transition: .5s cubic-bezier(0.65, 0.12, 0.1, 0.97);
+    }
 
-  li:hover {
-    opacity: 1;
-    filter: hue-rotate(35deg);
+    li:hover {
+      opacity: 1;
+      filter: hue-rotate(35deg);
+    }
   }
   .slick-prev,
   .slick-next {
@@ -35,10 +37,14 @@ const Container = styled.ul`
 
   .slick-prev {
     left: -35px;
+
   }
 
   .slick-next {
     right: -35px;
+    @media (max-width: 800px) {
+      right: -20px;
+    }
   }
 
   .slick-next::before,
