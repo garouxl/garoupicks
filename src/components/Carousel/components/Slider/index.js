@@ -6,6 +6,19 @@ import styled from 'styled-components';
 const Container = styled.ul`
   padding: 0;
   margin: 0;
+  transition: .5s cubic-bezier(0.65, 0.12, 0.1, 0.97);
+  &:hover li:not(:hover) {
+    transform: scale(.90) translateY(10px);
+    opacity: .5;
+  }
+  li {
+    transition: .5s cubic-bezier(0.65, 0.12, 0.1, 0.97);
+  }
+
+  li:hover {
+    opacity: 1;
+    filter: hue-rotate(35deg);
+  }
   .slick-prev,
   .slick-next {
     z-index: 50;
@@ -21,10 +34,17 @@ const Container = styled.ul`
   }
 
   .slick-prev {
-    left: 0;
+    left: -35px;
   }
+
   .slick-next {
-    right: 16px;
+    right: -35px;
+  }
+
+  .slick-next::before,
+  .slick-prev::before {
+    transition: .3s ease-in-out;
+    color: ${({ categoryColor }) => `${categoryColor}`}
   }
 `;
 
@@ -39,11 +59,11 @@ export const SliderItem = styled.li`
 `;
 
 
-const Slider = ({ children }) => (
-  <Container>
+const Slider = ({ children, categoryColor }) => (
+  <Container categoryColor={categoryColor}>
     <SlickSlider {...{
       dots: false,
-      infinite: false,
+      infinite: true,
       speed: 300,
       centerMode: false,
       variableWidth: true,
