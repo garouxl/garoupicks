@@ -99,6 +99,10 @@
     {
       "titulo": "Outros  filmes de ficção",
       "cor": "orange",
+      "link_extra": {
+        "text": "Tem pra todo gosto",
+        "url": "https://en.wikipedia.org/wiki/Science_fiction_film"
+      },
       "videos": [
         {
           "titulo": "Predator",
