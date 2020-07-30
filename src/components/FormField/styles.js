@@ -64,7 +64,7 @@ export const FieldGroup = styled.div`
 
   input[type='color'] {
     padding: 25px 6px 0 20px;
-    width: 10%;
+    width: 20%;
     height: 80px;
 
     @media (max-width: 800px) {
