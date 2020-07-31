@@ -40,7 +40,7 @@ function RegisterCategory() {
   }
 
   useEffect(() => {
-    const URL = 'http://localhost:3001/categorias';
+    const URL = 'http://localhost:8080/categorias';
     window.fetch(URL)
       .then(async(serverResponse) => {
         const result = await serverResponse.json();
