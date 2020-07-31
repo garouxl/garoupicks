@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import PageDefault from '../../../components/PageDefault'
+import PageDefault from '../../../components/PageDefault';
 
-function RegisterVideo () {
+function RegisterVideo() {
   return (
     <PageDefault>
       <h1>
@@ -13,7 +13,7 @@ function RegisterVideo () {
         Cadastrar Categoria
       </Link>
     </PageDefault>
-  )
+  );
 }
 
 export default RegisterVideo;

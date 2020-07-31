@@ -1,16 +1,14 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 
-function CadastroCategoria() {
-
+function RegisterCategory() {
   const initialValues = {
     nome: '',
     descricao: '',
-    cor: '#000000'
+    cor: '#000000',
   };
   // gera as categorias e o setter
   const [categories, setCategories] = useState([]);
@@ -20,30 +18,33 @@ function CadastroCategoria() {
   function handleValues(key, value) {
     setValues({
       ...values,
-      [key]: value
+      [key]: value,
     });
   }
 
-  function handleChange (event) {
+  function handleChange(event) {
     // const { getAttribute, value } = event.target;
     handleValues(
       event.target.getAttribute('name'),
-      event.target.value
+      event.target.value,
     );
   }
 
-  function submitCategory (event) {
+  function submitCategory(event) {
     event.preventDefault();
     setCategories([
       ...categories,
-      values
+      values,
     ]);
     setValues(initialValues);
   }
 
   return (
     <PageDefault>
-      <h1>Cadastro de Categoria: {values.nome}</h1>
+      <h1>
+        Cadastro de Categoria:
+        {values.nome}
+      </h1>
 
       <form onSubmit={submitCategory}>
         <FormField
@@ -52,6 +53,7 @@ function CadastroCategoria() {
           name="nome"
           value={values.nome}
           onChange={handleChange}
+          as="input"
         />
         <FormField
           label="Descrição da categoria"
@@ -59,6 +61,7 @@ function CadastroCategoria() {
           name="descricao"
           value={values.descricao}
           onChange={handleChange}
+          as="textarea"
         />
         <FormField
           label="Cor da categoria"
@@ -66,6 +69,7 @@ function CadastroCategoria() {
           name="cor"
           value={values.cor}
           onChange={handleChange}
+          as="input"
         />
         <Button>
           Cadastrar
@@ -73,8 +77,8 @@ function CadastroCategoria() {
       </form>
       <ul>
         {
-          categories.map((item, key) => (
-            <li key={key}>
+          categories.map((item) => (
+            <li key={item}>
               {item.nome}
             </li>
           ))
@@ -84,7 +88,7 @@ function CadastroCategoria() {
         Ir para home
       </Link>
     </PageDefault>
-  )
+  );
 }
 
-export default CadastroCategoria;
+export default RegisterCategory;

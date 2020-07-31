@@ -5,7 +5,8 @@ export const FieldGroup = styled.div`
     margin-bottom: 1rem;
   }
 
-  input {
+  input,
+  textarea {
     font-size: 1.5rem;
     font-family: inherit;
     color: var(--black);
@@ -50,11 +51,12 @@ export const FieldGroup = styled.div`
     line-height: 1.2rem;
     margin: 10px 0 0 2rem;
     display: block;
-    transform: translate(-7px,-76px);
+    transform: translate(-22px,-100px);
     transition: all .3s;
   }
 
-  input:placeholder-shown + label {
+  input:placeholder-shown + label,
+  textarea:placeholder-shown + label {
     font-size: 1.5rem;
     opacity: 0;
     visibility: hidden;
@@ -62,10 +64,23 @@ export const FieldGroup = styled.div`
     color: var(--blackLighter);
   }
 
+  textarea {
+    height:120px;
+  }
+
+  textarea:placeholder-shown + label {
+    transform: translate(-8px, -81px);
+  }
+
+  textarea + label {
+    transform: translate(-22px,-151px);
+  }
+
   input[type='color'] {
-    padding: 25px 6px 0 20px;
-    width: 20%;
-    height: 80px;
+    padding: 4px 20px 0 20px;
+    width: 160px;
+    height: 60px;
+
 
     @media (max-width: 800px) {
       background-color: var(--grayMedium);
@@ -76,8 +91,8 @@ export const FieldGroup = styled.div`
   input[type='color'] + label {
     font-size: 1rem;
     font-weight: 400;
-    transform: translate(-8px, -87px);
+    transform: translate(-21px,-91px);
     color: var(--blackLighter);
   }
 
-`
+`;

@@ -1,8 +1,9 @@
-import React, { Fragment} from 'react';
+import React from 'react';
+import PropTypes from 'prop-types';
 
-import Menu from '../Menu'
-import Footer from '../Footer'
-import styled from 'styled-components'
+import styled from 'styled-components';
+import Menu from '../Menu';
+import Footer from '../Footer';
 
 const Main = styled.main`
   background-color: var(--black);
@@ -13,15 +14,18 @@ const Main = styled.main`
 
 function PageDefault({ children }) {
   return (
-    <Fragment>
+    <div>
       <Menu />
       <Main>
         {children}
       </Main>
       <Footer />
-    </Fragment>
-
+    </div>
   );
 }
+
+PageDefault.propTypes = {
+  children: PropTypes.array.isRequired,
+};
 
 export default PageDefault;

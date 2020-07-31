@@ -12,5 +12,11 @@
         "statusBar.foreground": "#15202b",
         "statusBarItem.hoverBackground": "#74ce00"
     },
-    "peacock.remoteColor": "#90ff02"
+    "peacock.remoteColor": "#90ff02",
+    "standard.enable": false,
+    "standard.run": "onSave",
+    "standard.validate": [
+        "javascript",
+        "javascriptreact"
+      ],
 }
