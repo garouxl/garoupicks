@@ -15,7 +15,7 @@ function RegisterCategory() {
   const initialValues = {
     nome: '',
     descricao: '',
-    cor: '#000000',
+    cor: '#1b27d0',
   };
   // gera as categorias e o setter
   const [categories, setCategories] = useState([]);
