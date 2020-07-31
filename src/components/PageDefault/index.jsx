@@ -24,8 +24,12 @@ function PageDefault({ children }) {
   );
 }
 
+PageDefault.defaultProps = {
+  children: ''
+}
+
 PageDefault.propTypes = {
-  children: PropTypes.array.isRequired,
+  children: PropTypes.object.isRequired
 };
 
 export default PageDefault;
