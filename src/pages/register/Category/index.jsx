@@ -1,10 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Uniqid from 'uniqid';
+
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 
 function RegisterCategory() {
+
+  const URL = window.location.hostname.includes('localhost')
+    ? 'http://localhost:8080/categorias'
+    : 'https://garoupicks.herokuapp.com/categorias';
+
   const initialValues = {
     nome: '',
     descricao: '',
@@ -32,17 +39,22 @@ function RegisterCategory() {
 
   function submitCategory(event) {
     event.preventDefault();
-    setCategories([
-      ...categories,
-      values,
-    ]);
-    setValues(initialValues);
+    window.fetch(URL, {
+      method: 'POST',
+      body: window.JSON.stringify({ ...values }),
+      headers: {
+        'content-type': 'application/json',
+      },
+    }).then(() => {
+      setCategories([
+        ...categories,
+        values,
+      ]);
+      setValues(initialValues);
+    });
   }
 
   useEffect(() => {
-    const URL = window.location.hostname.includes('localhost')
-      ? 'http://localhost:8080/categorias'
-      : 'https://garoupicks.herokuapp.com/categorias';
     window.fetch(URL)
       .then(async (serverResponse) => {
         const result = await serverResponse.json();
@@ -56,8 +68,7 @@ function RegisterCategory() {
   return (
     <PageDefault>
       <h1>
-        Cadastro de Categoria:
-        {values.nome}
+        { `Cadastro de Categoria: ${values.nome}`}
       </h1>
 
       <form onSubmit={submitCategory}>
@@ -96,15 +107,32 @@ function RegisterCategory() {
         </h3>
       )}
 
-      <ul>
-        {
-          categories.map((item) => (
-            <li key={item.nome}>
-              {item.nome}
-            </li>
-          ))
-        }
-      </ul>
+      <table>
+        <tbody>
+          {
+            categories.map((item) => (
+              <tr key={Uniqid()}>
+                <td style={{ borderBottomColor: item.cor }}>
+                  {item.nome}
+                </td>
+                <td style={{ borderBottomColor: item.cor }}>
+                  {item.descricao}
+                </td>
+                <td style={{ borderBottomColor: item.cor }}>
+                  <span style={{ backgroundColor: item.cor }}>{item.cor}</span>
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Descrição</th>
+            <th>Cor</th>
+          </tr>
+        </thead>
+      </table>
       <Link to="/">
         Ir para home
       </Link>

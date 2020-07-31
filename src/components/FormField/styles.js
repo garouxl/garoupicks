@@ -66,6 +66,7 @@ const FieldGroup = styled.div`
 
   textarea {
     height:120px;
+    resize: none;
   }
 
   textarea:placeholder-shown + label {

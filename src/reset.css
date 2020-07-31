@@ -37,3 +37,22 @@ a {
   display: flex;
   flex-direction: column;
 }
+
+table {
+  width: 100%;
+  border-spacing: 0;
+  text-align: left;
+  padding: 1rem;
+}
+
+td,th {
+  border-bottom: 1px solid;
+  padding: 10px;
+}
+
+table span {
+  background-color: rgb(220, 24, 24);
+  padding: 0px 0px 1px 8px;
+  display: block;
+  border-radius: 20px;
+}
