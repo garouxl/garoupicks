@@ -20,7 +20,7 @@
     "dev": "concurrently \"yarn start\"  \"yarn server\"",
     "start": "react-scripts start",
     "server": "node ./server.js",
-    "server:static": "json-server --watch db.json  --port 8080",
+    "server:static": "json-server --watch db.json --port 8080",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
