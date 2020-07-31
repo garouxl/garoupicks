@@ -69,7 +69,7 @@ const FieldGroup = styled.div`
   }
 
   textarea:placeholder-shown + label {
-    transform: translate(-8px, -81px);
+    transform: translate(-8px, -103px);
   }
 
   textarea + label {

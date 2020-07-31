@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
 import styled from 'styled-components';
 import Menu from '../Menu';
@@ -23,13 +22,5 @@ function PageDefault({ children }) {
     </div>
   );
 }
-
-PageDefault.defaultProps = {
-  children: ''
-}
-
-PageDefault.propTypes = {
-  children: PropTypes.object.isRequired
-};
 
 export default PageDefault;
