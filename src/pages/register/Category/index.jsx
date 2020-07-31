@@ -40,17 +40,18 @@ function RegisterCategory() {
   }
 
   useEffect(() => {
-    const URL = 'http://localhost:8080/categorias';
+    const URL = window.location.hostname.includes('localhost')
+      ? 'http://localhost:8080/categorias'
+      : 'https://garoupicks.herokuapp.com/categorias';
     window.fetch(URL)
-      .then(async(serverResponse) => {
+      .then(async (serverResponse) => {
         const result = await serverResponse.json();
         setCategories([
           ...result,
         ]);
-      })
-    },
-    []
-  );
+      });
+  },
+  []);
 
   return (
     <PageDefault>
