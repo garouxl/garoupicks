@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const FieldGroup = styled.div`
+const FieldGroup = styled.div`
   &:not(:last-child) {
     margin-bottom: 1rem;
   }
@@ -96,3 +96,5 @@ export const FieldGroup = styled.div`
   }
 
 `;
+
+export { FieldGroup };
