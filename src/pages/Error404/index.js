@@ -11,7 +11,6 @@ function Erro404() {
     <PageDefault>
       <Section>
         <h1>Error 404</h1>
-        <h2>opa calma ai!</h2>
         <a href="https://garouxl.github.io/" tagert="_blank">
           <Image src={Easter} alt=""/>
         </a>
