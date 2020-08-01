@@ -9,7 +9,7 @@ const Main = styled.main`
   color: var(--white);
   flex: 1;
   padding: 95px 5% 10px;
-  min-height: 80vh
+  min-height: 80vh;
 `;
 
 function PageDefault({ children }) {

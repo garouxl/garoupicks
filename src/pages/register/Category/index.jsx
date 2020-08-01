@@ -6,19 +6,10 @@ import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 
-function RegisterCategory() {
+// customHook sempre tem 'use' como sufixo no nomte
 
-  const URL = window.location.hostname.includes('localhost')
-    ? 'http://localhost:8080/categorias'
-    : 'https://garoupicks.herokuapp.com/categorias';
+function useForm(initialValues) {
 
-  const initialValues = {
-    titulo: '',
-    descricao: '',
-    cor: '#1b27d0',
-  };
-  // gera as categorias e o setter
-  const [categories, setCategories] = useState([]);
   // gera os valores e o setter
   const [values, setValues] = useState(initialValues);
 
@@ -37,6 +28,34 @@ function RegisterCategory() {
     );
   }
 
+  function clearForm() {
+    setValues(initialValues);
+  }
+
+  return {
+    values,
+    clearForm,
+    handleChange,
+  };
+}
+
+function RegisterCategory() {
+
+  const initialValues = {
+    titulo: '',
+    descricao: '',
+    cor: '#1b27d0',
+  };
+
+  const { values, handleChange, clearForm } = useForm(initialValues);
+
+  const URL = window.location.hostname.includes('localhost')
+    ? 'http://localhost:8080/categorias'
+    : 'https://garoupicks.herokuapp.com/categorias';
+
+  // gera as categorias e o setter
+  const [categories, setCategories] = useState([]);
+
   function submitCategory(event) {
     event.preventDefault();
     window.fetch(URL, {
@@ -50,7 +69,7 @@ function RegisterCategory() {
         ...categories,
         values,
       ]);
-      setValues(initialValues);
+      clearForm();
     });
   }
 
@@ -63,7 +82,7 @@ function RegisterCategory() {
         ]);
       });
   },
-  []);
+  [URL]);
 
   return (
     <PageDefault>
@@ -73,7 +92,7 @@ function RegisterCategory() {
 
       <form onSubmit={submitCategory}>
         <FormField
-          label="Nome da categoria"
+          label="Titulo da categoria"
           type="text"
           name="titulo"
           value={values.titulo}

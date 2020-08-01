@@ -51,6 +51,12 @@
       "descricao": "Filmes de outrora",
       "cor": "#ec9909",
       "id": 6
+    },
+    {
+      "titulo": "Séries espaciais",
+      "descricao": "Séries que se passam no espaço profundo #deepSpace",
+      "cor": "#ff00dd",
+      "id": 7
     }
   ],
   "videos": [
