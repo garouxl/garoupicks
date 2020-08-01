@@ -13,7 +13,7 @@ function RegisterCategory() {
     : 'https://garoupicks.herokuapp.com/categorias';
 
   const initialValues = {
-    nome: '',
+    titulo: '',
     descricao: '',
     cor: '#1b27d0',
   };
@@ -68,15 +68,15 @@ function RegisterCategory() {
   return (
     <PageDefault>
       <h1>
-        { `Cadastro de Categoria: ${values.nome}`}
+        { `Cadastro de Categoria: ${values.titulo}`}
       </h1>
 
       <form onSubmit={submitCategory}>
         <FormField
           label="Nome da categoria"
           type="text"
-          name="nome"
-          value={values.nome}
+          name="titulo"
+          value={values.titulo}
           onChange={handleChange}
           as="input"
         />
@@ -113,7 +113,7 @@ function RegisterCategory() {
             categories.map((item) => (
               <tr key={Uniqid()}>
                 <td style={{ borderBottomColor: item.cor }}>
-                  {item.nome}
+                  {item.titulo}
                 </td>
                 <td style={{ borderBottomColor: item.cor }}>
                   {item.descricao}
@@ -127,7 +127,7 @@ function RegisterCategory() {
         </tbody>
         <thead>
           <tr>
-            <th>Nome</th>
+            <th>Título</th>
             <th>Descrição</th>
             <th>Cor</th>
           </tr>
