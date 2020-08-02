@@ -57,6 +57,18 @@
       "descricao": "Séries que se passam no espaço profundo #deepSpace",
       "cor": "#ff00dd",
       "id": 7
+    },
+    {
+      "titulo": "Curta metragens",
+      "descricao": "Curtas sobre o tema de criadores consagrados",
+      "cor": "#00ff88",
+      "id": 8
+    },
+    {
+      "titulo": "Documentários",
+      "descricao": "Docs sobre o tema e relacionados",
+      "cor": "#ff9500",
+      "id": 9
     }
   ],
   "videos": [

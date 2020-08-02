@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import uniqid from 'uniqid';
 
 import PageDefault from '../../components/PageDefault';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
 
 import dadosIniciais from '../../data/dados_iniciais.json';
+import categoriesRepository from '../../repositories/categories';
 
 function Home() {
+
+  useEffect(() => {
+    categoriesRepository.getAllWithVideos()
+      .then((categoriesWithVideos) => {
+        window.console.log(categoriesWithVideos);
+      })
+      .catch((error) => {
+        window.console.warn('Tratar o erro e mostrar')
+      });
+  });
+
   return (
     <PageDefault>
       <BannerMain
@@ -17,7 +30,7 @@ function Home() {
       {
         dadosIniciais.categorias.map((categoria) => (
           <Carousel
-            key={categoria}
+            key={uniqid()}
             ignoreFirstVideo
             category={categoria}
           />

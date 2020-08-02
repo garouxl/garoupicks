@@ -3,8 +3,8 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import Home from './pages/Home';
-import RegisterVideo from './pages/register/Video';
-import RegisterCategory from './pages/register/Category';
+import RegisterVideo from './pages/Register/Video';
+import RegisterCategory from './pages/Register/Category';
 import Error404 from './pages/Error404';
 
 import './reset.css';

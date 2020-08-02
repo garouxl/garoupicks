@@ -2,42 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Uniqid from 'uniqid';
 
+import categoriesRepository from '../../../repositories/categories';
+
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
 
+import useForm from '../../../hooks/useForm'
+
 // customHook sempre tem 'use' como sufixo no nomte
-
-function useForm(initialValues) {
-
-  // gera os valores e o setter
-  const [values, setValues] = useState(initialValues);
-
-  function handleValues(key, value) {
-    setValues({
-      ...values,
-      [key]: value,
-    });
-  }
-
-  function handleChange(event) {
-    // const { getAttribute, value } = event.target;
-    handleValues(
-      event.target.getAttribute('name'),
-      event.target.value,
-    );
-  }
-
-  function clearForm() {
-    setValues(initialValues);
-  }
-
-  return {
-    values,
-    clearForm,
-    handleChange,
-  };
-}
 
 function RegisterCategory() {
 
@@ -49,31 +22,29 @@ function RegisterCategory() {
 
   const { values, handleChange, clearForm } = useForm(initialValues);
 
-  const URL = window.location.hostname.includes('localhost')
-    ? 'http://localhost:8080/categorias'
-    : 'https://garoupicks.herokuapp.com/categorias';
-
   // gera as categorias e o setter
   const [categories, setCategories] = useState([]);
 
   function submitCategory(event) {
     event.preventDefault();
-    window.fetch(URL, {
-      method: 'POST',
-      body: window.JSON.stringify({ ...values }),
-      headers: {
-        'content-type': 'application/json',
-      },
-    }).then(() => {
-      setCategories([
-        ...categories,
-        values,
-      ]);
-      clearForm();
-    });
+    categoriesRepository.setNewCategory(values)
+      .then(() => {
+        setCategories([
+          ...categories,
+          values,
+        ]);
+        clearForm();
+      })
+      .catch((error) => {
+        window.console.warn('Tratar o erro e mostrar');
+      });
   }
 
   useEffect(() => {
+    const URL = window.location.hostname.includes('localhost')
+    ? 'http://localhost:8080/categorias'
+    : 'https://garoupicks.herokuapp.com/categorias';
+
     window.fetch(URL)
       .then(async (serverResponse) => {
         const result = await serverResponse.json();
@@ -82,7 +53,7 @@ function RegisterCategory() {
         ]);
       });
   },
-  [URL]);
+  []);
 
   return (
     <PageDefault>

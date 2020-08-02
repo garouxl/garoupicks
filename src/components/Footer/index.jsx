@@ -6,10 +6,10 @@ import Logo from '../../assets/img/alura-logo.svg';
 function Footer() {
   return (
     <FooterBase>
-      <FooterBase.wrapper>
-      <a href="https://www.alura.com.br/">
-        <img src={Logo} alt="Logo Alura" />
-      </a>
+      <FooterBase.Wrapper>
+        <a href="https://www.alura.com.br/">
+          <img src={Logo} alt="Logo Alura" />
+        </a>
         <p>
           Criado durante a
           {' '}
@@ -17,7 +17,7 @@ function Footer() {
             Imersão React da Alura
           </a>
         </p>
-      </FooterBase.wrapper>
+      </FooterBase.Wrapper>
     </FooterBase>
   );
 }
