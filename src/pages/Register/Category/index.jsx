@@ -7,8 +7,10 @@ import categoriesRepository from '../../../repositories/categories';
 import PageDefault from '../../../components/PageDefault';
 import FormField from '../../../components/FormField';
 import Button from '../../../components/Button';
+import Loading from '../../../components/Loading';
 
-import useForm from '../../../hooks/useForm'
+import useForm from '../../../hooks/useForm';
+import config from '../../../config';
 
 // customHook sempre tem 'use' como sufixo no nomte
 
@@ -41,11 +43,7 @@ function RegisterCategory() {
   }
 
   useEffect(() => {
-    const URL = window.location.hostname.includes('localhost')
-    ? 'http://localhost:8080/categorias'
-    : 'https://garoupicks.herokuapp.com/categorias';
-
-    window.fetch(URL)
+    window.fetch(`${config.URL_BACKEND}/categorias`)
       .then(async (serverResponse) => {
         const result = await serverResponse.json();
         setCategories([
@@ -86,16 +84,14 @@ function RegisterCategory() {
           onChange={handleChange}
           as="input"
         />
-        <Button>
+
+        <Button type="submit">
           Cadastrar
         </Button>
+
       </form>
 
-      {categories.length === 0 && (
-        <h3>
-          Carregando...
-        </h3>
-      )}
+      {categories.length === 0 && (<Loading />)}
 
       <table>
         <tbody>
@@ -123,9 +119,11 @@ function RegisterCategory() {
           </tr>
         </thead>
       </table>
+
       <Link to="/">
         Ir para home
       </Link>
+
     </PageDefault>
   );
 }

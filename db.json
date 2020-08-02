@@ -69,14 +69,27 @@
       "descricao": "Docs sobre o tema e relacionados",
       "cor": "#ff9500",
       "id": 9
+    },
+    {
+      "titulo": "Filmes de suspense",
+      "descricao": "Suspense no silêncio do espaço",
+      "cor": "#0a7cae",
+      "id": 10
+    },
+    {
+      "titulo": "Humor",
+      "descricao": "Sim, no espaço há que tem faça rir :D",
+      "cor": "#ff00c8",
+      "id": 11
     }
   ],
   "videos": [
     {
       "id": 1,
       "categoriaId": 1,
-      "titulo": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "titulo": "S.E.O com React",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE",
+      "description": "O que faz uma desenvolvedora de front end? Aprenda mais no video!"
     },
     {
       "id": 2,

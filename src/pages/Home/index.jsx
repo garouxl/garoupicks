@@ -1,40 +1,52 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import uniqid from 'uniqid';
 
 import PageDefault from '../../components/PageDefault';
 import BannerMain from '../../components/BannerMain';
 import Carousel from '../../components/Carousel';
+import Loading from '../../components/Loading';
 
-import dadosIniciais from '../../data/dados_iniciais.json';
 import categoriesRepository from '../../repositories/categories';
 
 function Home() {
+  const [initialData, setInitialData] = useState([]);
 
   useEffect(() => {
     categoriesRepository.getAllWithVideos()
       .then((categoriesWithVideos) => {
-        window.console.log(categoriesWithVideos);
+        window.setTimeout(() => {
+          setInitialData(categoriesWithVideos);
+        }, 1000);
       })
       .catch((error) => {
-        window.console.warn('Tratar o erro e mostrar')
+        window.console.warn('Tratar o erro e mostrar', error);
       });
-  });
+  }, []);
 
   return (
-    <PageDefault>
-      <BannerMain
-        videoTitle={dadosIniciais.categorias[0].videos[0].titulo}
-        url={dadosIniciais.categorias[0].videos[0].url}
-        videoDescription="Aliens, O Resgate arrecadou $ 180 milhões em todo o mundo. Foi indicado para sete prêmios da Academia , incluindo um de Melhor Atriz para Sigourney Weaver, ganhando ambos de Efeitos Sonoros e Efeitos Visuais. Ele ganhou oito Saturn Awards, incluindo Melhor Filme de Ficção Científica, Melhor Atriz para Weaver, e Melhor Direção e Melhor Escrita para Cameron."
-      />
+    <PageDefault paddingAll="0">
+      {initialData.length === 0 && (<Loading />)}
+
       {
-        dadosIniciais.categorias.map((categoria) => (
-          <Carousel
-            key={uniqid()}
-            ignoreFirstVideo
-            category={categoria}
-          />
-        ))
+        initialData.map((category, index) => {
+          if (index === 0) {
+            return (
+              <BannerMain
+                key={uniqid()}
+                videoTitle={initialData[0].videos[0].titulo}
+                url={initialData[0].videos[0].url}
+                videoDescription={initialData[0].videos[0].description}
+              />
+            );
+          }
+          return (
+            <Carousel
+              key={uniqid()}
+              ignoreFirstVideo
+              category={category}
+            />
+          );
+        })
       }
     </PageDefault>
   );

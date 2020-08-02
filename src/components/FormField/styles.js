@@ -6,7 +6,8 @@ const FieldGroup = styled.div`
   }
 
   input,
-  textarea {
+  textarea,
+  select {
     font-size: 1.5rem;
     font-family: inherit;
     color: var(--black);
@@ -94,6 +95,10 @@ const FieldGroup = styled.div`
     font-weight: 400;
     transform: translate(-21px,-91px);
     color: var(--blackLighter);
+  }
+
+  select + label {
+    transform: translate(-22px,-101px);
   }
 
 `;

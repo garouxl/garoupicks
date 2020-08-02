@@ -32,6 +32,11 @@ a {
   color: inherit;
 }
 
+table + a,
+form + a {
+  display: block;
+  margin-top: 20px;
+}
 #root {
   min-height: 100vh;
   display: flex;
