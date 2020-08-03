@@ -41,7 +41,7 @@ function RegisterCategory() {
         clearForm();
       })
       .catch((error) => {
-        window.console.warn('Tratar o erro e mostrar');
+        window.console.warn('Tratar o erro e mostrar', error);
       });
   }
 

@@ -13,7 +13,7 @@ function olar(page) {
       \n Lá você poderá baixar esse projeto bem como todos os outros aqui listados;
       \n Ah, e não custa nada deixar aqui meu perfil do LinkedIn, né!
       \n https://www.linkedin.com/in/laalmeida/`);
-    }, 2000);
+    }, 3500);
   }
   window[`olar-${page}`] = window[`olar-${page}`] || {};
 }

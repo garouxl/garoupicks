@@ -36,11 +36,20 @@
       "url": "https://pt.wikipedia.org/wiki/Jogo_eletr%C3%B4nico"
     },
     {
+      "id": 6,
       "titulo": "Documentários",
       "cor": "#d01b6c",
       "subtitulo": "Docs sobre o tema e além",
-      "url": "www.google.com",
-      "id": 6
+      "url": "http://www.google.com"
+
+    },
+    {
+      "id": 7,
+      "titulo": "Humor",
+      "cor": "#20bc32",
+      "subtitulo": "Humor na ficção científica",
+      "url": "https://www.cirandacultural.com.br/categorias/ficb-b-o-geral/ficcao-cientifica---humor"
+
     }
   ],
   "videos": [
@@ -200,6 +209,60 @@
       "categoriaId": 5,
       "titulo": "Resident Evil 8",
       "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
+    },
+    {
+      "titulo": "Hooks e validação",
+      "url": "https://www.youtube.com/watch?v=-nYNd6EuZHU&feature=youtu.be",
+      "categoriaId": 1,
+      "id": 162
+    },
+    {
+      "titulo": "Titulo de teste",
+      "url": "https://www.youtube.com/watch?v=-nYNd6EuZHU&feature=youtu.be",
+      "categoriaId": 1,
+      "id": 163
+    },
+    {
+      "titulo": "Titulo de teste",
+      "url": "https://www.youtube.com/watch?v=-nYNd6EuZHU&feature=youtu.be",
+      "categoriaId": 3,
+      "id": 164
+    },
+    {
+      "titulo": "A ciência por trás da ficção",
+      "url": "https://www.youtube.com/watch?v=S0nA2GfCQhQ",
+      "categoriaId": 6,
+      "id": 165
+    },
+    {
+      "titulo": "O caso Roswell",
+      "url": "https://www.youtube.com/watch?v=KLbTJmgUqyo",
+      "categoriaId": 6,
+      "id": 166
+    },
+    {
+      "titulo": "Casa do futuro",
+      "url": "https://www.youtube.com/watch?v=Aqz7SFb7Aik",
+      "categoriaId": 6,
+      "id": 167
+    },
+    {
+      "titulo": "Teste2",
+      "url": "https://www.youtube.com/watch?v=-nYNd6EuZHU&feature=youtu.be",
+      "categoriaId": 4,
+      "id": 168
+    },
+    {
+      "titulo": "Spaceballs",
+      "url": "https://www.youtube.com/watch?v=kGIM_yNzeUo",
+      "categoriaId": 7,
+      "id": 169
+    },
+    {
+      "titulo": "Galaxy Quest",
+      "url": "https://www.youtube.com/watch?v=B34jbC43XzA",
+      "categoriaId": 7,
+      "id": 170
     }
   ]
 }

@@ -10,7 +10,6 @@ import categoriesRepository from '../../repositories/categories';
 import olar from '../../utils';
 
 function Home() {
-
   olar('home');
 
   const [initialData, setInitialData] = useState([]);
@@ -19,7 +18,7 @@ function Home() {
     categoriesRepository.getAllWithVideos()
       .then((categoriesWithVideos) => {
         window.setTimeout(() => {
-          setInitialData(categoriesWithVideos);
+          setInitialData(categoriesWithVideos.filter(({ videos }) => videos.length > 0));
         }, 1000);
       })
       .catch((error) => {
@@ -34,7 +33,6 @@ function Home() {
       {
         initialData.map((category, index) => {
           const isFirst = index === 0;
-          console.dir(category)
           if (index === 0) {
             return (
               <div key={uniqid()}>
@@ -50,15 +48,14 @@ function Home() {
               </div>
             );
           }
-          if (category.videos.length > 0) {
-            return (
-              <Carousel
-                key={uniqid()}
-                ignoreFirstVideo={isFirst}
-                category={category}
-              />
-            );
-          }
+          return (
+            <Carousel
+              key={uniqid()}
+              ignoreFirstVideo={isFirst}
+              category={category}
+            />
+          );
+
         })
       }
     </PageDefault>

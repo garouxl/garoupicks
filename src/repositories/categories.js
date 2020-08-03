@@ -10,6 +10,14 @@ function getAllWithVideos() {
     });
 }
 
+function getAll() {
+  return window.fetch(URL_CATEGORIES)
+    .then(async (serverResponse) => {
+      const result = await serverResponse.json();
+      return result;
+    });
+}
+
 function setNewCategory(values) {
   return window.fetch(URL_CATEGORIES, {
     method: 'POST',
@@ -21,5 +29,5 @@ function setNewCategory(values) {
 }
 
 export default {
-  getAllWithVideos, setNewCategory,
+  getAllWithVideos, setNewCategory, getAll,
 };

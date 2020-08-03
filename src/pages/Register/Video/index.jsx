@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Link, useHistory } from 'react-router-dom';
 
 import PageDefault from '../../../components/PageDefault';
@@ -6,18 +6,54 @@ import FormField from '../../../components/FormField';
 import useForm from '../../../hooks/useForm';
 import Button from '../../../components/Button';
 
+import videosRepository from '../../../repositories/videos';
+import categoryRepository from '../../../repositories/categories';
+
 import olar from '../../../utils';
 
 function RegisterVideo() {
   olar('video');
 
   const history = useHistory();
-
+  const [categories, setCategories] = useState([]);
+  const categoryTitles = categories.map(({ titulo }) => titulo);
   const { handleChange, values, clearForm } = useForm({
-    titulo: 'Titulo de teste',
-    url: 'https://www.youtube.com/watch?v=-nYNd6EuZHU&feature=youtu.be',
-    categoria: 'Front End',
+    titulo: '',
+    url: '',
+    categoria: '',
   });
+
+  useEffect(() => {
+    categoryRepository
+      .getAll()
+      .then((allCategories) => {
+        setCategories(allCategories);
+      }).catch((error) => {
+        window.console.log('tratar o erro', error);
+      });
+  }, []);
+
+  function submitVideo(event) {
+    event.preventDefault();
+
+    const chosenCategory = categories.find((item) => {
+      return item.titulo.toLowerCase() === values.categoria.toLowerCase();
+    });
+
+    videosRepository
+      .setNewVideo({
+        titulo: values.titulo,
+        url: values.url,
+        categoriaId: chosenCategory.id,
+      })
+      .then(() => {
+        clearForm();
+        history.push('/');
+      })
+      .catch((error) => {
+        window.console.warn('Tratar o erro e mostrar', error);
+      });
+  }
 
   return (
     <PageDefault>
@@ -25,12 +61,7 @@ function RegisterVideo() {
         {`Cadastro de video: ${values.titulo}`}
       </h1>
 
-      <form onSubmit={(event) => {
-        event.preventDefault();
-        window.alert('Ainda não funciona, só amanhã :) ');
-        history.push('/');
-      }}
-      >
+      <form onSubmit={submitVideo}>
         <FormField
           label="Titulo do video"
           type="text"
@@ -55,6 +86,7 @@ function RegisterVideo() {
           value={values.categoria}
           onChange={handleChange}
           as="input"
+          suggestions={categoryTitles}
         />
 
         <Button type="submit">
