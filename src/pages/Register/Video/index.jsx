@@ -40,7 +40,7 @@ function RegisterVideo() {
           as="input"
         />
         <FormField
-          label="Endereço do video"
+          label="URL do video"
           type="text"
           name="url"
           value={values.url}

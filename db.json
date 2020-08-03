@@ -2,229 +2,204 @@
   "categorias": [
     {
       "id": 1,
-      "titulo": "Front End",
-      "descricao": "Vários videos sobre Front!",
-      "cor": "#6BD1FF",
+      "titulo": "Alien",
+      "cor": "purple",
       "link_extra": {
-        "text": "Formação de Front End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "A xeno-what?",
+        "url": "https://pt.wikipedia.org/wiki/Xenomorfo"
       }
     },
     {
       "id": 2,
-      "titulo": "Back End",
-      "descricao": "Muita info sobre back-end",
+      "titulo": "O horror veio do espaço",
       "cor": "#00C86F",
       "link_extra": {
-        "text": "Cursos de Back End na Alura",
-        "url": "https://www.alura.com.br/cursos-online-programacao"
+        "text": "Sempre vem coisa de lá!",
+        "url": "https://screenrant.com/best-horror-outer-space-movies/"
       }
     },
     {
       "id": 3,
-      "titulo": "Data Science e Inteligência Artificial",
-      "descricao": "Videos sobre I.A",
+      "titulo": "Zumbis",
       "cor": "#9cd33b",
       "link_extra": {
-        "text": "Cursos de Data Science na Alura",
-        "url": "https://www.alura.com.br/cursos-online-mobile"
+        "text": "Um sub-gênero muito apreciado... não!",
+        "url": "https://en.wikipedia.org/wiki/List_of_zombie_films"
       }
     },
     {
       "id": 4,
-      "titulo": "Filmes",
-      "descricao": "Muitos e muitos filmes!",
-      "cor": "orange"
+      "titulo": "Outros filmes de ficção",
+      "cor": "orange",
+      "link_extra": {
+        "text": "Tem pra todo gosto",
+        "url": "https://en.wikipedia.org/wiki/Science_fiction_film"
+      }
     },
     {
       "id": 5,
       "titulo": "Games",
-      "descricao": "Games que fazem a cabeça da galera!",
       "cor": "red",
       "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
+        "text": "Jogos sobre e fora do tema",
+        "url": "https://pt.wikipedia.org/wiki/Jogo_eletr%C3%B4nico"
       }
-    },
-    {
-      "titulo": "Filmes antigos",
-      "descricao": "Filmes de outrora",
-      "cor": "#ec9909",
-      "id": 6
-    },
-    {
-      "titulo": "Séries espaciais",
-      "descricao": "Séries que se passam no espaço profundo #deepSpace",
-      "cor": "#ff00dd",
-      "id": 7
-    },
-    {
-      "titulo": "Curta metragens",
-      "descricao": "Curtas sobre o tema de criadores consagrados",
-      "cor": "#00ff88",
-      "id": 8
-    },
-    {
-      "titulo": "Documentários",
-      "descricao": "Docs sobre o tema e relacionados",
-      "cor": "#ff9500",
-      "id": 9
-    },
-    {
-      "titulo": "Filmes de suspense",
-      "descricao": "Suspense no silêncio do espaço",
-      "cor": "#0a7cae",
-      "id": 10
-    },
-    {
-      "titulo": "Humor",
-      "descricao": "Sim, no espaço há que tem faça rir :D",
-      "cor": "#ff00c8",
-      "id": 11
     }
   ],
   "videos": [
     {
       "id": 1,
       "categoriaId": 1,
-      "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+      "titulo": "Game over man, game over! #aliens",
+      "url": "https://www.youtube.com/watch?v=bTCaVjQ8nU4",
+      "descricao": "Aliens, O Resgate arrecadou $ 180 milhões em todo o mundo. Foi indicado para sete prêmios da Academia , incluindo um de Melhor Atriz para Sigourney Weaver, ganhando ambos de Efeitos Sonoros e Efeitos Visuais. Ele ganhou oito Saturn Awards, incluindo Melhor Filme de Ficção Científica, Melhor Atriz para Weaver, e Melhor Direção e Melhor Escrita para Cameron."
     },
     {
       "id": 2,
       "categoriaId": 1,
-      "titulo": "S.E.O com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE",
-      "description": "O que faz uma desenvolvedora de front end? Aprenda mais no video!"
+      "titulo": "No espaço ninguém pode ouvir você gritar",
+      "url": "https://www.youtube.com/watch?v=DGAHtWV7Ua8"
     },
     {
       "id": 3,
       "categoriaId": 1,
-      "titulo": "Componentização com VanillaJS #AluraMais",
-      "url": "https://www.youtube.com/watch?v=LatCKpcOMak"
+      "titulo": "Só presta a Assembly edition...",
+      "url": "https://www.youtube.com/watch?v=KUTaNMJJBa8"
     },
     {
       "id": 4,
       "categoriaId": 1,
-      "titulo": "Pare de chutar e aprenda a display: inline #01",
-      "url": "https://www.youtube.com/watch?v=5PS6ku8NzIE"
+      "titulo": "Are you seeeing this?!",
+      "url": "https://www.youtube.com/watch?v=34cEo0VhfGE"
     },
     {
       "id": 5,
       "categoriaId": 1,
-      "titulo": "Template String: Interpolando strings com JavaScript #AluraMais",
-      "url": "https://www.youtube.com/watch?v=ORI_HTXaIw0"
+      "titulo": "Puxa, tem que se esforçar pra ver esse.",
+      "url": "https://www.youtube.com/watch?v=svnAD0TApb8"
     },
     {
       "id": 6,
       "categoriaId": 1,
-      "titulo": "Qual é a melhor linguagem de programação? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=Uh-GNH-t89w"
-    },
-    {
-      "id": 7,
-      "categoriaId": 1,
-      "titulo": "Novidades do Angular v9",
-      "url": "https://www.youtube.com/watch?v=34uHo7hFmG0"
+      "titulo": "Mas oi?!",
+      "url": "https://www.youtube.com/watch?v=-qJjiq72WOo"
     },
     {
       "id": 8,
       "categoriaId": 2,
-      "titulo": "PERCURSO em NÍVEL em ÁRVORE BINÁRIA | Estruturas de Dados #14",
-      "url": "https://www.youtube.com/watch?v=UOK7nS2E9xM"
+      "titulo": "The Thing",
+      "url": "https://www.youtube.com/watch?v=5ftmr17M-a4"
     },
     {
       "id": 9,
       "categoriaId": 2,
-      "titulo": "Coders4Tips - S01E04: GitHub CLI - Uma Nova Experiência no Github!",
-      "url": "https://www.youtube.com/watch?v=6o6-bKOZOEY"
+      "titulo": "Pandorum",
+      "url": "https://www.youtube.com/watch?v=aLO5OACiXNg"
     },
     {
       "id": 10,
       "categoriaId": 2,
-      "titulo": "Programei 4 robôs que criam vídeos para mim no YouTube",
-      "url": "https://www.youtube.com/watch?v=kjhu1LEmRpY"
+      "titulo": "Event Horizon",
+      "url": "https://www.youtube.com/watch?v=THxBHDsgTDw"
     },
     {
       "id": 11,
       "categoriaId": 2,
-      "titulo": "API: Dicionário do Programador",
-      "url": "https://www.youtube.com/watch?v=vGuqKIRWosk"
+      "titulo": "Life force",
+      "url": "https://www.youtube.com/watch?v=MOF0Ov8isvI"
     },
     {
       "id": 12,
       "categoriaId": 2,
-      "titulo": "Usando Git Direito",
-      "url": "https://www.youtube.com/watch?v=6OokP-NE49k"
+      "titulo": "LIFE",
+      "url": "https://www.youtube.com/watch?v=cuA-xqBw4jE"
     },
     {
       "id": 13,
       "categoriaId": 3,
-      "titulo": "Teste de Turing",
-      "url": "https://www.youtube.com/watch?v=BaPGU4JWa34"
+      "titulo": "Dawn of the dead",
+      "url": "https://www.youtube.com/watch?v=DV8mJcuYVaA"
     },
     {
       "id": 14,
       "categoriaId": 3,
-      "titulo": "O que é Data Science?",
-      "url": "https://www.youtube.com/watch?v=5b9Z8toVaAU&t=9s"
+      "titulo": "Return of the living dead",
+      "url": "https://www.youtube.com/watch?v=KeSAFGWzft8"
     },
     {
       "id": 15,
       "categoriaId": 3,
-      "titulo": "Melhor forma de aprender Python",
-      "url": "https://www.youtube.com/watch?v=Gojqw9BQ5qY"
+      "titulo": "Day of the dead",
+      "url": "https://www.youtube.com/watch?v=COj7ro8AjT8"
     },
     {
       "id": 16,
       "categoriaId": 3,
-      "titulo": "Como ingressar no mercado de Data Science?",
-      "url": "https://www.youtube.com/watch?v=gxyjGmOV540"
+      "titulo": "Zombi 2",
+      "url": "https://www.youtube.com/watch?v=AREh0eea5RM"
+    },
+    {
+      "id": 161,
+      "categoriaId": 3,
+      "titulo": "Night of the dead(1990)",
+      "url": "https://www.youtube.com/watch?v=vFcraq44t_M"
     },
     {
       "id": 17,
       "categoriaId": 4,
-      "titulo": "Interestellar",
-      "url": "https://www.youtube.com/watch?v=frD_IiY_A3E"
+      "titulo": "Predator",
+      "url": "https://www.youtube.com/watch?v=X2hBYGwKh3I"
     },
     {
       "id": 18,
       "categoriaId": 4,
-      "titulo": "Gattaca",
-      "url": "https://www.youtube.com/watch?v=Dl0tYLbrhhs"
+      "titulo": "Mad Max 2",
+      "url": "https://www.youtube.com/watch?v=UlwtiOyaoo0"
     },
     {
       "id": 19,
       "categoriaId": 4,
-      "titulo": "A Chegada",
-      "url": "https://www.youtube.com/watch?v=rNciXGzYZms"
+      "titulo": "Avatar",
+      "url": "https://www.youtube.com/watch?v=5PSNL1qE6VY"
     },
     {
       "id": 20,
       "categoriaId": 4,
-      "titulo": "Feitiço do Tempo",
-      "url": "https://www.youtube.com/watch?v=zi8d69P9NvI"
+      "titulo": "Splice",
+      "url": "https://www.youtube.com/watch?v=8pIeSYhipUs"
     },
     {
       "id": 21,
-      "categoriaId": 5,
-      "titulo": "Final Fantasy 7",
-      "url": "https://www.youtube.com/watch?v=I_ATSCTnUD8"
+      "categoriaId": 4,
+      "titulo": "Slither",
+      "url": "https://www.youtube.com/watch?v=2-f8wU6Fpeo"
     },
     {
       "id": 22,
       "categoriaId": 5,
-      "titulo": "Assassins Creed Valhalla",
-      "url": "https://www.youtube.com/watch?v=KDfdjB9uL0U"
+      "titulo": "Dead Space",
+      "url": "https://www.youtube.com/watch?v=hMlUsGSALyY"
     },
     {
       "id": 23,
       "categoriaId": 5,
-      "titulo": "God of War 4",
-      "url": "https://www.youtube.com/watch?v=FyIwEFXOcaE"
+      "titulo": "Escape from Butcher`s Bay",
+      "url": "https://www.youtube.com/watch?v=WktQZap_iiE"
     },
     {
       "id": 24,
+      "categoriaId": 5,
+      "titulo": "Amnesia: The dark descent",
+      "url": "https://www.youtube.com/watch?v=mAgyxK_r2eM"
+    },
+    {
+      "id": 25,
+      "categoriaId": 5,
+      "titulo": "SOMA",
+      "url": "https://www.youtube.com/watch?v=BZTfi1jv-EE"
+    },
+    {
+      "id": 26,
       "categoriaId": 5,
       "titulo": "Resident Evil 8",
       "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"

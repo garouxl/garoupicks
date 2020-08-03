@@ -5,7 +5,7 @@
       "link": "https://en.wikipedia.org/wiki/Alien_(franchise)",
       "cor": "purple",
       "link_extra": {
-        "text": "A xeno-what?",
+        "text": "A xeno-what?A xeno-what?",
         "url": "https://pt.wikipedia.org/wiki/Xenomorfo"
       },
       "videos": [
@@ -98,7 +98,7 @@
       ]
     },
     {
-      "titulo": "Outros  filmes de ficção",
+      "titulo": "Outros filmes de ficção",
       "cor": "orange",
       "link_extra": {
         "text": "Tem pra todo gosto",

@@ -16,13 +16,15 @@ import olar from '../../../utils';
 // customHook sempre tem 'use' como sufixo no nomte
 
 function RegisterCategory() {
-
   olar('categoria');
 
   const initialValues = {
     titulo: '',
-    descricao: '',
     cor: '#1b27d0',
+    link_extra: {
+      text: '',
+      url: '',
+    },
   };
 
   const { values, handleChange, clearForm } = useForm(initialValues);
@@ -72,12 +74,20 @@ function RegisterCategory() {
           as="input"
         />
         <FormField
-          label="Descrição da categoria"
+          label="Sub-título da categoria"
           type="text"
-          name="descricao"
-          value={values.descricao}
+          name="subtitulo"
+          value={values.link_extra.text}
           onChange={handleChange}
-          as="textarea"
+          as="input"
+        />
+        <FormField
+          label="URL do sub-título da categoria"
+          type="text"
+          name="url"
+          value={values.link_extra.url}
+          onChange={handleChange}
+          as="input"
         />
         <FormField
           label="Cor da categoria"
@@ -105,7 +115,7 @@ function RegisterCategory() {
                   {item.titulo}
                 </td>
                 <td style={{ borderBottomColor: item.cor }}>
-                  {item.descricao}
+                  {item.link_extra.text}
                 </td>
                 <td style={{ borderBottomColor: item.cor }}>
                   <span style={{ backgroundColor: item.cor }}>{item.cor}</span>
@@ -116,9 +126,9 @@ function RegisterCategory() {
         </tbody>
         <thead>
           <tr>
-            <th>Título</th>
-            <th>Descrição</th>
-            <th>Cor</th>
+            <th>Título:</th>
+            <th>Sub-título:</th>
+            <th>Cor:</th>
           </tr>
         </thead>
       </table>
