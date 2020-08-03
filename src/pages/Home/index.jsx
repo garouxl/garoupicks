@@ -34,6 +34,7 @@ function Home() {
       {
         initialData.map((category, index) => {
           const isFirst = index === 0;
+          console.dir(category)
           if (index === 0) {
             return (
               <div key={uniqid()}>
@@ -49,13 +50,15 @@ function Home() {
               </div>
             );
           }
-          return (
-            <Carousel
-              key={uniqid()}
-              ignoreFirstVideo={isFirst}
-              category={category}
-            />
-          );
+          if (category.videos.length > 0) {
+            return (
+              <Carousel
+                key={uniqid()}
+                ignoreFirstVideo={isFirst}
+                category={category}
+              />
+            );
+          }
         })
       }
     </PageDefault>

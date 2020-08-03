@@ -4,46 +4,43 @@
       "id": 1,
       "titulo": "Alien",
       "cor": "purple",
-      "link_extra": {
-        "text": "A xeno-what?",
-        "url": "https://pt.wikipedia.org/wiki/Xenomorfo"
-      }
+      "subtitulo": "A xeno-what?",
+      "url": "https://pt.wikipedia.org/wiki/Xenomorfo"
     },
     {
       "id": 2,
       "titulo": "O horror veio do espaço",
       "cor": "#00C86F",
-      "link_extra": {
-        "text": "Sempre vem coisa de lá!",
-        "url": "https://screenrant.com/best-horror-outer-space-movies/"
-      }
+      "subtitulo": "Sempre vem coisa de lá!",
+      "url": "https://screenrant.com/best-horror-outer-space-movies/"
     },
     {
       "id": 3,
       "titulo": "Zumbis",
       "cor": "#9cd33b",
-      "link_extra": {
-        "text": "Um sub-gênero muito apreciado... não!",
-        "url": "https://en.wikipedia.org/wiki/List_of_zombie_films"
-      }
+      "subtitulo": "Um sub-gênero muito apreciado... não!",
+      "url": "https://en.wikipedia.org/wiki/List_of_zombie_films"
     },
     {
       "id": 4,
       "titulo": "Outros filmes de ficção",
       "cor": "orange",
-      "link_extra": {
-        "text": "Tem pra todo gosto",
-        "url": "https://en.wikipedia.org/wiki/Science_fiction_film"
-      }
+      "subtitulo": "Tem pra todo gosto",
+      "url": "https://en.wikipedia.org/wiki/Science_fiction_film"
     },
     {
       "id": 5,
       "titulo": "Games",
       "cor": "red",
-      "link_extra": {
-        "text": "Jogos sobre e fora do tema",
-        "url": "https://pt.wikipedia.org/wiki/Jogo_eletr%C3%B4nico"
-      }
+      "subtitulo": "Jogos sobre e fora do tema",
+      "url": "https://pt.wikipedia.org/wiki/Jogo_eletr%C3%B4nico"
+    },
+    {
+      "titulo": "Documentários",
+      "cor": "#d01b6c",
+      "subtitulo": "Docs sobre o tema e além",
+      "url": "www.google.com",
+      "id": 6
     }
   ],
   "videos": [

@@ -21,10 +21,8 @@ function RegisterCategory() {
   const initialValues = {
     titulo: '',
     cor: '#1b27d0',
-    link_extra: {
-      text: '',
-      url: '',
-    },
+    subtitulo: '',
+    url: '',
   };
 
   const { values, handleChange, clearForm } = useForm(initialValues);
@@ -77,7 +75,7 @@ function RegisterCategory() {
           label="Sub-título da categoria"
           type="text"
           name="subtitulo"
-          value={values.link_extra.text}
+          value={values.subtitulo}
           onChange={handleChange}
           as="input"
         />
@@ -85,7 +83,7 @@ function RegisterCategory() {
           label="URL do sub-título da categoria"
           type="text"
           name="url"
-          value={values.link_extra.url}
+          value={values.url}
           onChange={handleChange}
           as="input"
         />
@@ -115,7 +113,7 @@ function RegisterCategory() {
                   {item.titulo}
                 </td>
                 <td style={{ borderBottomColor: item.cor }}>
-                  {item.link_extra.text}
+                  {item.subtitulo}
                 </td>
                 <td style={{ borderBottomColor: item.cor }}>
                   <span style={{ backgroundColor: item.cor }}>{item.cor}</span>
