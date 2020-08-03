@@ -6,6 +6,7 @@
 
 :root {
   --primary: #B3FF03;
+  --secondary: #e100ff;
   --black: #000000;
   --blackLighter: #9E9E9E;
   --grayLight: #F5F5F5;
@@ -61,3 +62,10 @@ table span {
   display: block;
   border-radius: 20px;
 }
+
+  @media(max-width: 800px) {
+    th:nth-child(2),
+    td:nth-child(2) {
+      display: none;
+    }
+  }
