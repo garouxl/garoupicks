@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { VideoCardGroupContainer, Title, ExtraLink } from './styles';
 import VideoCard from './components/VideoCard';
 import Slider, { SliderItem } from './components/Slider'
@@ -15,7 +15,7 @@ function Carousel({
   return (
     <VideoCardGroupContainer>
       {categoryTitle && (
-        <Fragment>
+        <div>
           <Title style={{ backgroundColor: categoryColor || 'red' }}>
             {categoryTitle}
           </Title>
@@ -25,7 +25,7 @@ function Carousel({
               {categoryExtraLink}
             </ExtraLink>
           }
-        </Fragment>
+        </div>
       )}
       <Slider categoryColor={categoryColor}>
         {videos.map((video, index) => {
