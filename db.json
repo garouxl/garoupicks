@@ -87,15 +87,15 @@
     {
       "id": 1,
       "categoriaId": 1,
-      "titulo": "S.E.O com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE",
-      "description": "O que faz uma desenvolvedora de front end? Aprenda mais no video!"
+      "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
     },
     {
       "id": 2,
       "categoriaId": 1,
-      "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+      "titulo": "S.E.O com React",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE",
+      "description": "O que faz uma desenvolvedora de front end? Aprenda mais no video!"
     },
     {
       "id": 3,

@@ -11,10 +11,13 @@ import Loading from '../../../components/Loading';
 
 import useForm from '../../../hooks/useForm';
 import config from '../../../config';
+import olar from '../../../utils';
 
 // customHook sempre tem 'use' como sufixo no nomte
 
 function RegisterCategory() {
+
+  olar('categoria');
 
   const initialValues = {
     titulo: '',

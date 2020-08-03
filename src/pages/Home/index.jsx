@@ -7,8 +7,12 @@ import Carousel from '../../components/Carousel';
 import Loading from '../../components/Loading';
 
 import categoriesRepository from '../../repositories/categories';
+import olar from '../../utils';
 
 function Home() {
+
+  olar('home');
+
   const [initialData, setInitialData] = useState([]);
 
   useEffect(() => {
@@ -29,20 +33,26 @@ function Home() {
 
       {
         initialData.map((category, index) => {
+          const isFirst = index === 0;
           if (index === 0) {
             return (
-              <BannerMain
-                key={uniqid()}
-                videoTitle={initialData[0].videos[0].titulo}
-                url={initialData[0].videos[0].url}
-                videoDescription={initialData[0].videos[0].description}
-              />
+              <div key={uniqid()}>
+                <BannerMain
+                  videoTitle={initialData[0].videos[0].titulo}
+                  url={initialData[0].videos[0].url}
+                  videoDescription={initialData[0].videos[0].description}
+                />
+                <Carousel
+                  ignoreFirstVideo={isFirst}
+                  category={category}
+                />
+              </div>
             );
           }
           return (
             <Carousel
               key={uniqid()}
-              ignoreFirstVideo
+              ignoreFirstVideo={isFirst}
               category={category}
             />
           );

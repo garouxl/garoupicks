@@ -6,8 +6,13 @@ import FormField from '../../../components/FormField';
 import useForm from '../../../hooks/useForm';
 import Button from '../../../components/Button';
 
+import olar from '../../../utils';
+
 function RegisterVideo() {
+  olar('video');
+
   const history = useHistory();
+
   const { handleChange, values, clearForm } = useForm({
     titulo: 'Titulo de teste',
     url: 'https://www.youtube.com/watch?v=-nYNd6EuZHU&feature=youtu.be',
