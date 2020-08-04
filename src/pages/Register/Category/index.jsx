@@ -97,7 +97,7 @@ function RegisterCategory() {
         />
 
         <Button type="submit">
-          Cadastrar
+          Cadastrar categoria
         </Button>
 
       </form>

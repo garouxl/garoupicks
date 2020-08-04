@@ -41,7 +41,6 @@
       "cor": "#d01b6c",
       "subtitulo": "Docs sobre o tema e além",
       "url": "http://www.google.com"
-
     },
     {
       "id": 7,
@@ -49,7 +48,6 @@
       "cor": "#20bc32",
       "subtitulo": "Humor na ficção científica",
       "url": "https://www.cirandacultural.com.br/categorias/ficb-b-o-geral/ficcao-cientifica---humor"
-
     }
   ],
   "videos": [
@@ -263,6 +261,30 @@
       "url": "https://www.youtube.com/watch?v=B34jbC43XzA",
       "categoriaId": 7,
       "id": 170
+    },
+    {
+      "titulo": "Não entre em pânico!",
+      "url": "https://www.youtube.com/watch?v=MbGNcoB2Y4I",
+      "categoriaId": 7,
+      "id": 171
+    },
+    {
+      "titulo": "Olha o panda de lixo!",
+      "url": "https://www.youtube.com/watch?v=d96cjJhvlMA",
+      "categoriaId": 7,
+      "id": 172
+    },
+    {
+      "titulo": "Eles estão sempre envolvidos...",
+      "url": "https://www.youtube.com/watch?v=Z8MruXQI874",
+      "categoriaId": 6,
+      "id": 173
+    },
+    {
+      "titulo": "Masjestic 12 #topSecret",
+      "url": "https://www.youtube.com/watch?v=0vFHIz_yDE8",
+      "categoriaId": 6,
+      "id": 174
     }
   ]
 }

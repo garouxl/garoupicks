@@ -90,7 +90,7 @@ function RegisterVideo() {
         />
 
         <Button type="submit">
-          Cadastrar
+          Cadastrar video
         </Button>
 
       </form>
