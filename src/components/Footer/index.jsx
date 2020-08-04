@@ -1,17 +1,14 @@
 import React from 'react';
 import { FooterBase } from './styles';
-// import Logo from '../Logo'
-import Logo from '../../assets/img/alura-logo.svg';
+import Logo from '../Logo';
 
 function Footer() {
   return (
     <FooterBase>
       <FooterBase.Wrapper>
-        <a href="https://www.alura.com.br/">
-          <img src={Logo} alt="Logo Alura" />
-        </a>
+        <Logo />
         <p>
-          Criado durante a
+          Criado inicialmente durante a
           {' '}
           <a href="https://www.alura.com.br/">
             Imersão React da Alura
