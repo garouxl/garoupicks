@@ -58,7 +58,7 @@
       "categoriaId": 1,
       "titulo": "Game over man, game over! #aliens",
       "url": "https://www.youtube.com/watch?v=bTCaVjQ8nU4",
-      "descricao": "Aliens, O Resgate arrecadou $ 180 milhões em todo o mundo. Foi indicado para sete prêmios da Academia , incluindo um de Melhor Atriz para Sigourney Weaver, ganhando ambos de Efeitos Sonoros e Efeitos Visuais. Ele ganhou oito Saturn Awards, incluindo Melhor Filme de Ficção Científica, Melhor Atriz para Weaver, e Melhor Direção e Melhor Escrita para Cameron."
+      "descricao": "Aliens, O Resgate arrecadou $180 milhões em todo o mundo. Foi indicado para sete prêmios da Academia , incluindo um de Melhor Atriz para Sigourney Weaver, ganhando ambos de Efeitos Sonoros e Efeitos Visuais. Ele ganhou oito Saturn Awards, incluindo Melhor Filme de Ficção Científica, Melhor Atriz para Weaver, e Melhor Direção e Melhor Escrita para Cameron."
     },
     {
       "id": 2,
@@ -217,13 +217,13 @@
       "id": 162
     },
     {
-      "titulo": "Titulo de teste",
+      "titulo": "Titulo de teste3",
       "url": "https://www.youtube.com/watch?v=-nYNd6EuZHU&feature=youtu.be",
       "categoriaId": 1,
       "id": 163
     },
     {
-      "titulo": "Titulo de teste",
+      "titulo": "Titulo de teste2",
       "url": "https://www.youtube.com/watch?v=-nYNd6EuZHU&feature=youtu.be",
       "categoriaId": 3,
       "id": 164
@@ -247,7 +247,7 @@
       "id": 167
     },
     {
-      "titulo": "Teste2",
+      "titulo": "Outro título",
       "url": "https://www.youtube.com/watch?v=-nYNd6EuZHU&feature=youtu.be",
       "categoriaId": 4,
       "id": 168
