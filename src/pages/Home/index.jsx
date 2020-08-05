@@ -19,7 +19,7 @@ function Home() {
       .then((categoriesWithVideos) => {
         window.setTimeout(() => {
           setInitialData(categoriesWithVideos.filter(({ videos }) => videos.length > 0));
-        }, 1000);
+        }, 100);
       })
       .catch((error) => {
         window.console.warn('Tratar o erro e mostrar', error);

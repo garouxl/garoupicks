@@ -1,5 +1,6 @@
-import React from 'react';
-import { VideoCardContainer } from './styles';
+import React, { useCallback, useState } from 'react';
+import { debounce } from 'lodash';
+import { VideoCardContainer, VideoCardContainerPreview, ResponsiveIframe, VideoCardWrapper } from './styles';
 
 function getYouTubeId(youtubeURL) {
   return youtubeURL
@@ -9,19 +10,53 @@ function getYouTubeId(youtubeURL) {
     );
 }
 
-
 function VideoCard({ chidren, videoTitle, videoURL, categoryColor }) {
+  const [isHovering, setIsHovering] = useState(false);
+  let isCardVisible = false ;
   const image = `https://img.youtube.com/vi/${getYouTubeId(videoURL)}/hqdefault.jpg`;
-  return (
-    <VideoCardContainer
-      url={image}
-      href={videoURL}
-      target="_blank"
-      style={{ borderColor: categoryColor || 'red' }}
-    >
-      <span>{videoTitle}</span>
-    </VideoCardContainer>
 
+  const getEmbedVideo = () => {
+    setIsHovering(true);
+    isCardVisible = true;
+  };
+
+  const delayEmbed = useCallback(debounce(getEmbedVideo, 1000), []);
+
+  const cancelEmbed = () => {
+    delayEmbed.cancel();
+    setIsHovering(false);
+    isCardVisible = false;
+  };
+  return (
+    <div>
+      <VideoCardWrapper onMouseEnter={delayEmbed} onMouseLeave={cancelEmbed}>
+        <VideoCardContainer
+          url={image}
+          href={videoURL}
+          target="_blank"
+          style={{ borderColor: categoryColor || 'red' }}
+          className={isCardVisible ? 'front' : ''}
+        >
+          <span>{videoTitle}</span>
+        </VideoCardContainer>
+        {
+          (isHovering && (
+            <VideoCardContainerPreview
+              style={{ borderColor: categoryColor || 'red' }}
+              className={isCardVisible ? 'back' : ''}
+            >
+              <ResponsiveIframe
+                title="Titulo do Iframe"
+                src={`https://www.youtube.com/embed/${getYouTubeId(videoURL)}?autoplay=1&mute=0`}
+                frameBorder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </VideoCardContainerPreview>
+          ))
+        }
+      </VideoCardWrapper>
+    </div>
   );
 }
 

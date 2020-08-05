@@ -6,7 +6,7 @@ function Footer() {
   return (
     <FooterBase>
       <FooterBase.Wrapper>
-        <Logo />
+        <Logo title="Logo footer" />
         <p>
           Criado inicialmente durante a
           {' '}

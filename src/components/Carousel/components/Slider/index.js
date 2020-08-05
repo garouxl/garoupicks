@@ -87,7 +87,6 @@ export const SliderItem = styled.li`
   }
   &::after {
     content: "";
-    content: "";
     display: block;
     width: 294px;
     height: 193px;
