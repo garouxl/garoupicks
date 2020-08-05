@@ -1,17 +1,6 @@
 import styled from 'styled-components';
 
 export const VideoCardWrapper = styled.div`
-  position: relative;
-  .back {
-    transform: rotateY(180deg);
-  }
-
-  &:hover .back {
-    transform: rotateY(0deg);
-  }
-  &:hover .front {
-    transform: rotateY(180deg);
-}
 `;
 
 export const VideoCardContainer = styled.a`
@@ -36,7 +25,6 @@ export const VideoCardContainer = styled.a`
   align-items: flex-end;
   padding: 16px;
   outline: 0;
-  transition: .5s cubic-bezier(0.65,0.12,0.1,0.97);
 
   &:not(:first-child) {
     margin-left: 20px;
@@ -63,8 +51,6 @@ export const VideoCardContainerPreview = styled.div`
   align-items: flex-end;
   padding: 16px;
   outline: 0;
-  transition: .5s cubic-bezier(0.65,0.12,0.1,0.97);
-
 `;
 
 export const ResponsiveIframe = styled.iframe`

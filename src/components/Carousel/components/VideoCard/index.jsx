@@ -12,12 +12,10 @@ function getYouTubeId(youtubeURL) {
 
 function VideoCard({ chidren, videoTitle, videoURL, categoryColor }) {
   const [isHovering, setIsHovering] = useState(false);
-  let isCardVisible = false ;
   const image = `https://img.youtube.com/vi/${getYouTubeId(videoURL)}/hqdefault.jpg`;
 
   const getEmbedVideo = () => {
     setIsHovering(true);
-    isCardVisible = true;
   };
 
   const delayEmbed = useCallback(debounce(getEmbedVideo, 1000), []);
@@ -25,7 +23,6 @@ function VideoCard({ chidren, videoTitle, videoURL, categoryColor }) {
   const cancelEmbed = () => {
     delayEmbed.cancel();
     setIsHovering(false);
-    isCardVisible = false;
   };
   return (
     <div>
@@ -35,7 +32,6 @@ function VideoCard({ chidren, videoTitle, videoURL, categoryColor }) {
           href={videoURL}
           target="_blank"
           style={{ borderColor: categoryColor || 'red' }}
-          className={isCardVisible ? 'front' : ''}
         >
           <span>{videoTitle}</span>
         </VideoCardContainer>
@@ -43,7 +39,6 @@ function VideoCard({ chidren, videoTitle, videoURL, categoryColor }) {
           (isHovering && (
             <VideoCardContainerPreview
               style={{ borderColor: categoryColor || 'red' }}
-              className={isCardVisible ? 'back' : ''}
             >
               <ResponsiveIframe
                 title="Titulo do Iframe"

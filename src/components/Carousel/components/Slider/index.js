@@ -19,7 +19,6 @@ const Container = styled.ul`
 
     li:hover {
       opacity: 1;
-      filter: hue-rotate(35deg);
     }
   }
   .slick-prev,
@@ -102,10 +101,9 @@ export const SliderItem = styled.li`
     border-radius: 10px;
   }
   &:hover::after {
-      opacity: .7
+      opacity: .8
     }
 `;
-
 
 const Slider = ({ children, categoryColor }) => (
   <Container categoryColor={categoryColor}>
