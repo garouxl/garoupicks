@@ -12,15 +12,11 @@ const Container = styled.ul`
     transform: scale(.90) translateY(10px);
     opacity: .2;
   }
-    li {
-      position: relative;
-      transition: .5s cubic-bezier(0.65, 0.12, 0.1, 0.97);
-    }
 
-    li:hover {
-      opacity: 1;
-    }
+  li:hover {
+    opacity: 1;
   }
+
   .slick-prev,
   .slick-next {
     z-index: 50;
@@ -60,6 +56,7 @@ const Container = styled.ul`
 export const SliderItem = styled.li`
   margin-right: 16px;
   position: relative;
+  transition: .5s cubic-bezier(0.65, 0.12, 0.1, 0.97);
   img {
     margin: 16px;
     width: 298px;

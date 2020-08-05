@@ -41,7 +41,7 @@ function VideoCard({ chidren, videoTitle, videoURL, categoryColor }) {
               style={{ borderColor: categoryColor || 'red' }}
             >
               <ResponsiveIframe
-                title="Titulo do Iframe"
+                title={videoTitle}
                 src={`https://www.youtube.com/embed/${getYouTubeId(videoURL)}?autoplay=1&mute=0`}
                 frameBorder="0"
                 allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
