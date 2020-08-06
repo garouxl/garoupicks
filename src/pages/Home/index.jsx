@@ -17,9 +17,9 @@ function Home() {
   useEffect(() => {
     categoriesRepository.getAllWithVideos()
       .then((categoriesWithVideos) => {
-       // window.setTimeout(() => {
+        window.setTimeout(() => {
           setInitialData(categoriesWithVideos.filter(({ videos }) => videos.length > 0));
-       // }, 100);
+        }, 1000);
       })
       .catch((error) => {
         window.console.warn('Tratar o erro e mostrar', error);

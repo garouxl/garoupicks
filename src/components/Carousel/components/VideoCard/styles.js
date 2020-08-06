@@ -1,8 +1,5 @@
 import styled from 'styled-components';
 
-export const VideoCardWrapper = styled.div`
-`;
-
 export const VideoCardContainer = styled.a`
   position: absolute;
   top: 0;

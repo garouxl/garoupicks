@@ -9,8 +9,9 @@ const Container = styled.ul`
   transition: .5s cubic-bezier(0.65, 0.12, 0.1, 0.97);
   @media (min-width: 800px) {
     &:hover li:not(:hover) {
-    transform: scale(.90) translateY(10px);
-    opacity: .2;
+      transform: scale(.90) translateY(10px);
+      opacity: .2;
+    }
   }
 
   li:hover {
@@ -98,7 +99,7 @@ export const SliderItem = styled.li`
     border-radius: 10px;
   }
   &:hover::after {
-      opacity: .8
+      opacity: .8;
     }
 `;
 
